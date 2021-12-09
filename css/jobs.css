@@ -1,0 +1,93 @@
+section {
+  max-width: 1250px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+
+section h1 {
+  margin-left: 22px;
+  font-size: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.jobsContainer {
+  flex-grow: 1;
+  padding: 30px;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(3, 1fr);
+  background: #112a;
+  border-radius: 12px;
+}
+
+.job-tile {
+  background: #1c1c24;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  padding: 30px;
+  transition: transform 0.3s;
+}
+.job-tile:hover {
+  transform: scale(1.08);
+}
+.top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.top img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.top i {
+  display: flex;
+  align-items: center;
+}
+.tile {
+  margin: 20px 0px;
+}
+.tile span {
+  font-size: 35 px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.fa-ellipsis-v:hover::before {
+  background-color: #5f5f5f;
+}
+.description {
+  font-size: 20px;
+  color: #beb5c7;
+  margin-bottom: 15px;
+  height: 150px;
+  overflow: hidden;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.order {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.order span {
+  padding: 10px;
+  background-color: rgb(75, 74, 74);
+  border-radius: 10px;
+}
+.order span:hover {
+  background-color: rgb(107, 105, 105);
+}
